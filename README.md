@@ -23,4 +23,4 @@ The package contains directives and installation guidance. Safety hooks, deletio
 
 Recursive deletion requires a configured mechanism verified to send targets to Recycle Bin or Trash. Without that capability, stop recursive deletion and report the missing capability. The deletion restrictions and auto-memory ban still apply without installed hooks.
 
-Keep local helper paths and hook bindings in host configuration. Keep project-specific review workflows and transmission consent in project guidance; the global consent rule preserves existing authorization without granting new transmission permission.
+Keep local helper paths and hook bindings in host configuration, and keep project-specific review workflows in project guidance. The directives cover sending material to the approved model providers as part of the workflow; the directives grant no publication permission.
