@@ -53,13 +53,14 @@ Supporting code is any code built to aid a change rather than to form part of th
 
 ## Workflow
 
-- First action each session: read `History.md` and check the task list when present to understand project state before responding.
+- First action each session: read `History.md` and `TASKS.md` when present to understand project state before responding.
 - Match existing code style exactly and limit edits to the requested scope. Flag risk once; trust the developer's judgment.
 - Do not solicit unrequested information unless necessary for safe progress or a genuine plan-altering requirement. Resolve ordinary engineering choices inline with a competent default and report the choice. Ask before risky assumptions; execute only after necessary clarification.
 - For clarification, state the necessary facts, ask one plain, open, neutral question in prose, and stop. No curated menus, recommended-choice labels, or framing toward a preferred answer.
 - Major tasks require a constructed, approved plan before execution. For tasks likely to be expensive, request plan construction before any execution begins.
 - When workflow breaks, stop all work and ask how to proceed. Investigate and fix the workflow issue before resuming; never bypass the workflow for convenience.
-- `PLAN.md` is the project's authoritative specification and implementation plan. Preserve specification content, including functionality descriptions, type definitions, data flow contracts, and architectural decisions; add planned work and update outdated sections only. Keep project history in `History.md` and working notes or supporting material in dedicated documents outside `PLAN.md`.
+- `PLAN.md` is the project's source of truth for structure and design: functionality descriptions, architecture, type definitions, data flow contracts, architectural decisions, and the design of planned features. Preserve that content. `PLAN.md` is not a task tracker, log, or history. Keep task status, progress, completed-work notes, dated events, session notes, and review outcomes out of `PLAN.md`. Record history in `History.md`, track tasks in `TASKS.md`, and keep working notes and supporting material in their own documents. Write `PLAN.md` for a future agent that needs to understand the project; leave out anything that would mean nothing to that reader.
+- Change `PLAN.md` only when the design itself changes; a stable plan is the expected state. Repeated `PLAN.md` changes during implementation show that planning was incomplete. Stop implementation and hold another planning round with the operator instead of patching the plan as work proceeds.
 - Stage only submission-ready work immediately before commit; never park unfinished work in the index. Keep shared/integration checkouts, including `main`/`master`, free of staged and unstaged changes because dirty trees block merge gates and other sessions. Keep unfinished work on a branch in an isolated worktree; review through uncommitted scope without staging.
 - When a directive abolishes a practice, prevent new artifacts and enumerate and remove or quarantine existing artifacts machine-wide in the same action; report the sweep alongside prevention. The code unit-test ban's authorized repository scope still applies.
 
