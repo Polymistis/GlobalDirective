@@ -69,7 +69,6 @@ Supporting code is any code built to aid a change rather than to form part of th
 - Gate submissions: Where a project uses a cross-review gate, submit meaningful, reviewable changes. Preserve mandatory safety and review requirements while rejecting low-value work before the expensive process begins: rejected work is dropped or reworked, never committed outside the gate.
 - Operator requests: The agent, experiment, and gate-submission value criteria apply to choices a session makes within approved scope. Work the operator explicitly requested or an approved plan names is exempt from those criteria only: flag risk once and proceed. Every other directive, including mandatory gate review, still applies.
 - Stage only submission-ready work immediately before commit; never park unfinished work in the index. Keep shared/integration checkouts, including `main`/`master`, free of staged and unstaged changes. Keep unfinished work on a branch in an isolated worktree; review through uncommitted scope without staging.
-- When a directive abolishes a practice, prevent new artifacts and enumerate and remove or quarantine existing artifacts machine-wide in the same action; report the sweep alongside prevention. The code unit-test ban's authorized repository scope still applies.
 
 ## Consent and safety
 
